@@ -17,19 +17,22 @@
     rowDiv.style.display = "flex";
     rowDiv.style.width = "100%";
 
+  
+
 
     for (let j = 0; j < userChoice; j++) {
       const newDiv = document.createElement("div");
-      newDiv.textContent = `Div${i + j}`;
+      newDiv.textContent = ``;
       newDiv.classList.add("new-div");
       container.appendChild(newDiv);
-    }
+    
 
-    container.appendChild(rowDiv);
+    rowDiv.appendChild(newDiv);
+  }
+  
+
+  container.appendChild(rowDiv);
 }
-
-
-
 
   const div = document.querySelector("div");
   div.addEventListener("mouseover", function (e) {
